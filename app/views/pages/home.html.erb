@@ -1,2 +1,8 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+url(https://images.pexels.com/photos/7991495/pexels-photo-7991495.jpeg?auto=compress&cs=tinysrgb&w=1600);">
+  <div class="container" style="padding: 0 12px;">
+    <h1>Create a movie list !</h1>
+    <p>By adding movies to your lists you'll be able to group your favourite movies by genre or other criteria.</p>
+    <%= link_to "Start now!", new_user_session_path, class: "btn btn-primary" %>
+  </div>
+</div>
