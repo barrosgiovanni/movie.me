@@ -3,6 +3,11 @@ url(https://images.pexels.com/photos/7991495/pexels-photo-7991495.jpeg?auto=comp
   <div class="container" style="padding: 0 12px;">
     <h1>Create a movie list !</h1>
     <p>By adding movies to your lists you'll be able to group your favourite movies by genre or other criteria.</p>
-    <%= link_to "Start now!", new_user_session_path, class: "btn btn-primary" %>
+    <% if user_signed_in? %>
+      <%= link_to "Start now!", lists_path, class: "btn btn-primary" %>
+    <% else %>
+      <%= link_to "Start now!", new_user_session_path, class: "btn btn-primary" %>
+    <% end %>
+
   </div>
 </div>
