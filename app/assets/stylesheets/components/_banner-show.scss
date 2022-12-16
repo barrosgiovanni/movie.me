@@ -1,0 +1,21 @@
+.banner-show {
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  height: 32vh;
+}
+
+.banner-show h1 {
+  // margin-bottom: 24px;
+  color: #D7D7D7;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.btn-edit {
+  position: absolute;
+  top: 35vh;
+  right: 2vw;
+  z-index: 1000;
+}
+

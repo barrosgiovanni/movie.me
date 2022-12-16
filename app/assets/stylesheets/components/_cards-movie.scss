@@ -1,0 +1,49 @@
+.card-movie {
+  position: relative;
+  overflow: hidden;
+  background: black;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  color: #D7D7D7;
+  border: 1px solid #D7D7D7;
+}
+
+.card-movie > img {
+  height: 196px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-movie-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-movie p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+.card-movie-rating {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-bookmark-comment {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.fa-quote-left {
+  font-size: 12px;
+}
+
+.btn-delete {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  z-index: 1000;
+}

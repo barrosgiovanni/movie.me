@@ -1,13 +1,13 @@
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 60px;
 }
 
 .card-category {
   background-size: cover;
   background-position: center;
-  height: 200px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
