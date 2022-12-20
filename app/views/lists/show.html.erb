@@ -1,5 +1,5 @@
 <div class="banner-show" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
-url(https://images.pexels.com/photos/7991378/pexels-photo-7991378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
+url('<%= cl_image_path @list.photo.key, crop: :fill %>');">
 
   <%= link_to "Edit list", lists_new_path, class: "btn btn-primary btn-edit" %>
   <h1 class="text-center"><%= @list.name %></h1>

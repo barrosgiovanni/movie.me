@@ -8,6 +8,8 @@
 
 puts "Cleaning database..."
 Movie.destroy_all
+User.destroy_all
+List.destroy_all
 
 puts "Creating movies..."
 Movie.create(
