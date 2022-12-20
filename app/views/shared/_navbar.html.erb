@@ -18,7 +18,11 @@
             <%= link_to "New list", lists_new_path, class: "nav-link", style:"color: #D7D7D7" %>
           </li>
           <li class="nav-item dropdown">
-            <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: " ms-3 avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+            <% if current_user.photo.key != nil %>
+              <%= cl_image_tag current_user.photo.key, class: "avatar dropdown-toggle", id: "navbarDropdown", data: {bs_toggle: "dropdown"} %>
+            <% else %>
+              <%= image_tag "dog.jpg", crop: :fill, class: "avatar dropdown-toggle", id: "navbarDropdown", data: {bs_toggle: "dropdown"} %>
+            <% end %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <%= link_to "Action", "#", class: "dropdown-item" %>
               <%= link_to "Another action", "#", class: "dropdown-item" %>
