@@ -1,20 +1,18 @@
 <% if notice %>
   <div class="flash flash-success fade show" role="flash">
     <span>Successfully signed in!</span>
-    <a data-bs-dismiss="flash" aria-label="Close"><i class="fas fa-times"></i></a>
   </div>
 <% end %>
+
 <% if alert %>
   <div class="flash flash-warning fade show" role="flash">
-    <%# <%= alert %>
-    <span>It seems you don't have profile picture yet.</span>
-    <a data-bs-dismiss="flash" aria-label="Close"><i class="fas fa-times"></i></a>
+    <%= alert %>
+    <!-- <span>It seems you don't have profile picture yet.</span> -->
   </div>
 <% end %>
 <% if alert %>
   <div class="flash flash-danger fade show" role="flash">
-    <%# <%= alert %>
-    <span>A problem has occurred while processing your demand.</span>
-    <a data-bs-dismiss="flash" aria-label="Close"><i class="fas fa-times"></i></a>
+    <%= alert %>
+    <!-- <span>A problem has occurred while processing your demand.</span> -->
   </div>
 <% end %>

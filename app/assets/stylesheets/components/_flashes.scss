@@ -6,22 +6,23 @@
   z-index: 1000;
   justify-content: center;
   align-items: center;
-  background-color: #D7D7D7;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .flash-success {
   border: 2px solid #1EDD88;
+  background-color: #fff;
+  color: #000;
 }
 
 .flash-warning {
   border: 2px solid #FFC65A;
+  background-color: #fff;
+  color: #000;
 }
 
 .flash-danger {
   border: 2px solid #FD1015;
-}
-
-.fa-times {
-  margin-left: 16px;
+  background-color: #fff;
+  color: #000;
 }

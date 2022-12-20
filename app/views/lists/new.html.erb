@@ -5,6 +5,7 @@
       <h1 class="mb-5 mt-2" style="color: #D7D7D7;">How would you like to name your list?</h1>
       <%= simple_form_for(@list) do |f| %>
         <%= f.input :name %>
+        <%= f.input :photo, as: :file %>
         <%= f.button :submit, "Create list", class:"btn btn-primary" %>
       <% end %>
 
