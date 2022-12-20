@@ -21,7 +21,7 @@
             <% if current_user.photo.key != nil %>
               <%= cl_image_tag current_user.photo.key, class: "avatar dropdown-toggle", id: "navbarDropdown", data: {bs_toggle: "dropdown"} %>
             <% else %>
-              <%= image_tag "dog.jpg", crop: :fill, class: "avatar dropdown-toggle", id: "navbarDropdown", data: {bs_toggle: "dropdown"} %>
+              <%= image_tag "dog.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: {bs_toggle: "dropdown"} %>
             <% end %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <%= link_to "Action", "#", class: "dropdown-item" %>
