@@ -1,7 +1,7 @@
 <div class="banner-show" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
 url('<%= cl_image_path @list.photo.key, crop: :fill %>');">
 
-  <%= link_to "Edit list", lists_new_path, class: "btn btn-primary btn-edit" %>
+  <%= link_to "Add movie", lists_new_path, class: "btn btn-edit btn-danger" %>
   <h1 class="text-center"><%= @list.name %></h1>
 
 </div>
@@ -11,7 +11,7 @@ url('<%= cl_image_path @list.photo.key, crop: :fill %>');">
     <div class="cards">
 
       <div class="card-movie">
-        <%= link_to "Delete", list_path(@list), data: {turbo_method: :delete}, class: "btn btn-primary btn-delete" %>
+        <%= link_to "Remove", list_path(@list), data: {turbo_method: :delete}, class: "btn btn-delete btn-danger" %>
         <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
         <div class="card-movie-infos">
           <div class="mt-3 mx-3">
@@ -32,7 +32,7 @@ url('<%= cl_image_path @list.photo.key, crop: :fill %>');">
       </div>
 
       <div class="card-movie">
-        <%= link_to "Delete", list_path(@list), data: {turbo_method: :delete}, class: "btn btn-primary btn-delete" %>
+        <%= link_to "Remove", list_path(@list), data: {turbo_method: :delete}, class: "btn btn-delete btn-danger" %>
         <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
         <div class="card-movie-infos">
           <div class="mt-3 mx-3">
@@ -53,7 +53,7 @@ url('<%= cl_image_path @list.photo.key, crop: :fill %>');">
       </div>
 
       <div class="card-movie">
-        <%= link_to "Delete", list_path(@list), data: {turbo_method: :delete}, class: "btn btn-primary btn-delete" %>
+        <%= link_to "Remove", list_path(@list), data: {turbo_method: :delete}, class: "btn btn-delete btn-danger" %>
         <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
         <div class="card-movie-infos">
           <div class="mt-3 mx-3">
@@ -74,7 +74,7 @@ url('<%= cl_image_path @list.photo.key, crop: :fill %>');">
       </div>
 
       <div class="card-movie">
-        <%= link_to "Delete", list_path(@list), data: {turbo_method: :delete}, class: "btn btn-primary btn-delete" %>
+        <%= link_to "Remove", list_path(@list), data: {turbo_method: :delete}, class: "btn btn-delete btn-danger" %>
         <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
         <div class="card-movie-infos">
           <div class="mt-3 mx-3">
@@ -95,7 +95,7 @@ url('<%= cl_image_path @list.photo.key, crop: :fill %>');">
       </div>
 
       <div class="card-movie">
-        <%= link_to "Delete", list_path(@list), data: {turbo_method: :delete}, class: "btn btn-primary btn-delete" %>
+        <%= link_to "Remove", list_path(@list), data: {turbo_method: :delete}, class: "btn btn-delete btn-danger" %>
         <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
         <div class="card-movie-infos">
           <div class="mt-3 mx-3">
