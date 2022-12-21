@@ -1,8 +1,15 @@
-<div class="container mt-4 py-5">
+<div class="container mt-4 py-3">
 
   <div class="row justify-content-center">
     <div class="col-6">
-      <h1 class="text-center" style="color: #D7D7D7;">Search field comes here...</h1>
+      <%= form_with url: movies_path, method: :get, class: "d-flex" do %>
+        <%= text_field_tag :query,
+          params[:query],
+          class: "form-control",
+          placeholder: "Search through all movies..."
+        %>
+        <%= submit_tag "Search", class: "btn btn-search btn-danger" %>
+      <% end %>
     </div>
   </div>
 
