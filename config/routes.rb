@@ -11,7 +11,9 @@ Rails.application.routes.draw do
   # get 'lists/:id',       to: 'lists#show',        as: :list
   # delete 'lists/:id',    to: 'lists#destroy'
 
-  resources :lists, except: [:edit, :update]
+  resources :lists, except: [:edit, :update] do
+    resources :bookmarks, only: [:new, :create]
+  end
 
-  get 'movies', to: 'movies#index'
+  resources :movies, only: [:index, :show]
 end
