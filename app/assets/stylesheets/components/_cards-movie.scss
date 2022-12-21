@@ -47,3 +47,48 @@
   right: 1%;
   z-index: 1000;
 }
+
+.btn-create {
+  position: absolute;
+  top: 1%;
+  right: 2%;
+  z-index: 1000;
+}
+
+.container {
+  position: relative;
+}
+
+.delete-icon {
+  position: absolute;
+  top: 1%;
+  right: 2%;
+  z-index: 1000;
+  color: #bb2d3b;
+  font-size: 20px;
+  transition: 0.7s;
+}
+
+.card-movie a {
+  text-decoration: none;
+}
+
+.delete-icon:hover {
+  font-size: 28px;
+  color: #bb2d3b;
+}
+
+.add-icon {
+  position: absolute;
+  top: 1%;
+  right: 2%;
+  z-index: 1000;
+  color: #bb2d3b;
+  font-size: 20px;
+  transition: 0.7s;
+}
+
+.add-icon:hover {
+  font-size: 28px;
+  color: #bb2d3b;
+}

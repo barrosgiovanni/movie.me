@@ -12,10 +12,13 @@
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
           <li class="nav-item active">
+            <%= link_to "Search all movies", movies_path, class: "nav-link", style:"color: #D7D7D7"%>
+          </li>
+          <li class="nav-item active">
             <%= link_to "My lists", lists_path, class: "nav-link", style:"color: #D7D7D7"%>
           </li>
           <li class="nav-item">
-            <%= link_to "New list", lists_new_path, class: "nav-link", style:"color: #D7D7D7" %>
+            <%= link_to "New list", new_list_path, class: "nav-link", style:"color: #D7D7D7" %>
           </li>
           <li class="nav-item dropdown">
             <% if current_user.photo.key != nil %>
@@ -31,7 +34,7 @@
           </li>
         <% else %>
           <li class="nav-item"-->
-            <%= link_to "Login", new_user_session_path, class: "btn btn-primary" %>
+            <%= link_to "Login", new_user_session_path, class: "btn btn-login btn-danger" %>
           </li>
         <% end %>
       </ul>
