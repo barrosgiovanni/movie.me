@@ -1,8 +1,10 @@
 class Movie < ApplicationRecord
   has_many :bookmarks
 
-  validates :title, presence: true, uniqueness: true
-  validates :overview, presence: true, length: { in: 25..150 }
-  validates :poster_url, presence: true, uniqueness: true
-  validates :rating, presence: true, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 10 }
+  include PgSearch::Model
+  pg_search_scope :search_by_title_and_overview,
+    against: [:title, :overview],
+    using: {
+    tsearch: {prefix: true}
+    }
 end
