@@ -1,26 +1,21 @@
 <div class="container mt-4 py-3">
-
   <div class="row justify-content-center">
     <div class="col-6">
       <%= form_with url: movies_path, method: :get, class: "d-flex" do %>
         <%= text_field_tag :query,
           params[:query],
-          class: "form-control",
+          class: "form-control me-1",
           placeholder: "Search through all movies..."
         %>
         <%= submit_tag "Search", class: "btn btn-search btn-danger" %>
       <% end %>
     </div>
   </div>
-
 </div>
-
 
 <div class="container mb-5 pt-3">
   <div class="cards mt-5">
-
     <% @movies.each do |movie|%>
-
       <div class="card-movie">
         <%= link_to movies_path, data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to remove this movie from the list?" }, class: "add-icon" do %>
           <i class="fa-solid fa-circle-plus"></i>
@@ -43,8 +38,6 @@
           </div>
         </div>
       </div>
-
     <% end %>
-
   </div>
 </div>
