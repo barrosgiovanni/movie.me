@@ -36,4 +36,4 @@ end
 
 movies_dataset()
 
-puts "Mission accomplished!"
+puts "Finished seeding the app!"
