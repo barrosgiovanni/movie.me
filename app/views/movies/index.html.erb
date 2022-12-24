@@ -24,9 +24,10 @@
         <div class="card-movie-infos">
           <div class="mt-3 mx-3">
             <h2 class="card-movie-title mb-2"><%= movie.title %></h2>
-            <p><%= movie.overview %></p>
+            <p class="js-excerpt excerpt-hidden"><%= movie.overview %></p>
           </div>
-          <div class="d-flex justify-content-between mt-3 mb-3 mx-3">
+          <a role="button" href="#" class="js-show-more show-more-btn mx-3 mt-1">Show more</a>
+          <div class="bookmark-star-rating d-flex justify-content-between mt-3 mb-3 mx-3">
             <div class="d-inline-flex mt-1">
               <i class="fa-solid fa-quote-left"></i>
               <h2 class="card-bookmark-comment ms-2">Bookmark comment in here!</h2>
