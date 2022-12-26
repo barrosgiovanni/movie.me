@@ -85,10 +85,10 @@ gem "cloudinary"
 # Apply a complete search engine in your web page
 gem "pg_search"
 
-# Rest-client gem provides us with tools to make API requests and populate our app
+# Rest-client gem provides us with tools to make API requests and populate our app ...
 gem 'rest-client', '~> 2.1'
 
-# library to work in association with rest-client gem
+# library to work in association with rest-client gem ...
 # gem 'mime-types', '~> 3.0'
 
 # Pagy gem enable us to divid the movie index in many pages in order to split pagination in frontend anb backend ...
