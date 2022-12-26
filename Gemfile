@@ -90,3 +90,6 @@ gem 'rest-client', '~> 2.1'
 
 # library to work in association with rest-client gem
 # gem 'mime-types', '~> 3.0'
+
+# Pagy gem enable us to divid the movie index in many pages in order to split pagination in frontend anb backend ...
+gem 'pagy'

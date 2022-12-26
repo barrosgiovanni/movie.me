@@ -27,18 +27,20 @@
             <p class="js-excerpt excerpt-hidden"><%= movie.overview %></p>
           </div>
           <a role="button" href="#" class="js-show-more show-more-btn mx-3 mt-1">Show more</a>
-          <div class="d-flex justify-content-between mt-3 mb-3 mx-3">
-            <div class="d-inline-flex mt-1">
-              <i class="fa-solid fa-quote-left"></i>
-              <h2 class="card-bookmark-comment ms-2">Bookmark comment in here!</h2>
-            </div>
-            <div class="d-inline-flex">
-              <i class="fa-solid fa-star" style="color: #FDDA0D;"></i>
-              <h2 class="card-movie-rating ms-2"><%= movie.rating %></h2>
-            </div>
+          <div class="d-flex justify-content-end mt-3 mb-3 mx-3">
+            <i class="fa-solid fa-star" style="color: #FDDA0D;"></i>
+            <h2 class="card-movie-rating ms-2"><%= movie.rating %></h2>
           </div>
         </div>
       </div>
     <% end %>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row justify-content-center mt-5">
+    <div class="col-3 mt-5 justify-content-center">
+      <%== pagy_nav(@pagy).html_safe %>
+    </div>
   </div>
 </div>
