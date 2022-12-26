@@ -1,0 +1,23 @@
+.pagy-bootstrap-nav {
+  width: 100%;
+  margin: auto;
+}
+
+a.page-link {
+  color: #dc3545;
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}
+
+.page-link:hover {
+  color: #dc3545 !important;
+}
+
+.page-item.active .page-link:hover {
+  color: #fff !important;
+}
