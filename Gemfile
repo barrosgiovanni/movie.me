@@ -76,13 +76,13 @@ group :test do
   gem "webdrivers"
 end
 
-# Add user attributes to your page
+# Add user attributes to your page ...
 gem "devise"
 
-# Easily enable user to upload image
+# Easily enable user to upload image ...
 gem "cloudinary"
 
-# Apply a complete search engine in your web page
+# Apply a complete search engine in your web page ...
 gem "pg_search"
 
 # Rest-client gem provides us with tools to make API requests and populate our app ...
