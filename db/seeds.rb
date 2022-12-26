@@ -27,6 +27,7 @@ def movies_dataset
       Movie.create(
         title: movie["title"],
         overview: movie["overview"],
+        year: movie["release_date"][0, 4].to_i,
         poster_url: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/#{movie["poster_path"]}",
         rating: movie["vote_average"]
       )
