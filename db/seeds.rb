@@ -20,7 +20,7 @@ def movies_dataset
   page = 1
 
   # iterating to create movies and adding +1 to pages so we can create movies in the first 300 pages ...
-  while page <= 500
+  while page <= 499
     top_movies = RestClient.get("https://api.themoviedb.org/3/movie/top_rated?api_key=#{api_data[:key]}&language=en-US&page=#{page}")
     top_movies_array = JSON.parse(top_movies)["results"]
     top_movies_array.each do |movie|
