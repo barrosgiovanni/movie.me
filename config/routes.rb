@@ -14,6 +14,6 @@ Rails.application.routes.draw do
   resources :lists, except: [:edit, :update] do
     resources :bookmarks, only: [:new, :create]
   end
-
-  resources :movies, only: [:index, :show]
+  resources :bookmarks, only: [:destroy]
+  resources :movies, only: [:index]
 end
