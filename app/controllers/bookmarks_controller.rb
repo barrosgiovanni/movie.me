@@ -12,11 +12,8 @@ class BookmarksController < ApplicationController
     if @bookmark.save
       redirect_to list_path(@list)
     else
-      render :new, status: :unprocessable_entity
+      render :new
     end
-  end
-
-  def show
   end
 
   def destroy

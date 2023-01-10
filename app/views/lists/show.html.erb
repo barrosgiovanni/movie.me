@@ -10,7 +10,7 @@ url('<%= cl_image_path @list.photo.key, crop: :fill %>');">
     <% @list.movies.each do |movie| %>
       <% bookmark = Bookmark.find_by(list: @list, movie: movie) %>
         <div class="card-movie">
-          <%= link_to list_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to remove #{movie.title} from the list?" }, class: "delete-icon" do %>
+          <%= link_to bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to remove #{movie.title} from the list?" }, class: "delete-icon" do %>
             <i class="fa-solid fa-trash"></i>
           <% end %>
           <%= image_tag movie.poster_url %>
