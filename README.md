@@ -10,9 +10,7 @@ Inside the app, once the user is signed in, he'll be able to create, name and ed
 
 Movie.me backend is structured on Ruby on Rails framework and its frontend developed through JavaScript, HTML, CSS and Bootstrap. 
 
-The app schema is based in 4 tables (users, movies, lists and bookmarks) in relation to each other. e.g when your delete a list, you're also deleting the movies from that list.
-
-The movie database present in the app was conceived from TMDB API and consists of 10.000 top rated titles. For that, the app runs a get request on "https://api.themoviedb.org/3/movie/top_rated", parsing the JSON file which is presented and retrieving the fields which are necessary (title, overview, release date, poster url and rating).
+The movie database present in the app was conceived from TMDB API and consists of 8.000 top rated titles. For that, the app runs a get request on "https://api.themoviedb.org/3/movie/top_rated", parsing the JSON file which is presented and retrieving the fields which are necessary (title, overview, release date, poster url and rating).
 
 ## Tech stacks I've used:
 
@@ -25,10 +23,10 @@ The movie database present in the app was conceived from TMDB API and consists o
 
 ## Improvements to be done:
 
+- Improve web app responsiveness
 - Enhance the app performance (backend)
 - Add more JS elements to make the app more dynamic
 - Implement better style to buttons and icons (frontend)
-- Increase the movie database (+10.000 title)
 
 ## Acknowledgments
 
