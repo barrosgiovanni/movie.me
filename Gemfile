@@ -93,3 +93,5 @@ gem 'rest-client', '~> 2.1'
 
 # Pagy gem enable us to divid the movie index in many pages in order to split pagination in frontend anb backend ...
 gem 'pagy'
+
+gem 'pundit'
