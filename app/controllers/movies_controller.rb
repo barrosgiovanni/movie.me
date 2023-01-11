@@ -5,5 +5,12 @@ class MoviesController < ApplicationController
     else
       @pagy, @movies = pagy(Movie.all)
     end
+
+    authorize
+  end
+
+  def show
+    @movie = Movie.find(params[:id])
+    authorize(@movie)
   end
 end
