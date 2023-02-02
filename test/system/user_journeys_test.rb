@@ -22,11 +22,20 @@ class UserJourneysTest < ApplicationSystemTestCase
     # save_screenshot
 
     fill_in "Name", with: "Fiction Masterpieces"
-    # save_screenshot
+    # save_and_open_screenshot
 
     click_on "Create list"
     # save_screenshot
 
     assert_selector "h1", text: "How would you like to name your list?"
+  end
+
+  test "a signed in user can see movies index" do
+    login_as users(:giovanni)
+    visit movies_url
+    # save_and_open_screenshot
+
+    assert_selector "h2", text: "StreetDance 3D (2010)"
+    assert_selector ".card-movie", count: Movie.count
   end
 end
