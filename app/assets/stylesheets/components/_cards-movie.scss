@@ -82,9 +82,14 @@
   top: 1%;
   right: 2%;
   z-index: 1000;
-  color: #dc3545;;
+  color: #dc3545;
   font-size: 20px;
   transition: 0.7s;
+}
+
+.add-movie {
+  color: #dc3545 !important;
+  font-size: 20px;
 }
 
 .add-icon:hover {

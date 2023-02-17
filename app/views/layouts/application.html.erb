@@ -23,6 +23,7 @@
       <%= render "shared/navbar" %>
       <main id="main-content">
         <%= yield %>
+        <%= turbo_frame_tag "remote_modal" %>
       </main>
       <%= render "shared/flashes" %>
       <%= render "shared/footer" %>
