@@ -5,6 +5,7 @@ class MoviesController < ApplicationController
     else
       @pagy, @movies = pagy(policy_scope(Movie).all)
     end
+    @lists = policy_scope(List)
   end
 
   def show

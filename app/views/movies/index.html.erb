@@ -17,7 +17,7 @@
   <div class="cards mt-5">
     <% @movies.each do |movie|%>
       <div class="card-movie">
-        <%= link_to movies_path, data: { turbo_method: :delete, turbo_confirm: "Are you sure you want to remove this movie from the list?" }, class: "add-icon" do %>
+        <%= link_to lists_path, "data-controller": "turbo", class: "add-icon" do %>
           <i class="fa-solid fa-circle-plus"></i>
         <% end %>
         <%= image_tag movie.poster_url %>
