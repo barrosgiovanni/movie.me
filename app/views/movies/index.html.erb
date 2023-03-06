@@ -17,9 +17,6 @@
   <div class="cards mt-5">
     <% @movies.each do |movie|%>
       <div class="card-movie">
-        <%= link_to lists_path, "data-controller": "turbo", class: "add-icon" do %>
-          <i class="fa-solid fa-circle-plus"></i>
-        <% end %>
         <%= image_tag movie.poster_url %>
         <div class="card-movie-infos my-3">
             <div class="d-flex row justify-content-between mb-3 mx-2">
